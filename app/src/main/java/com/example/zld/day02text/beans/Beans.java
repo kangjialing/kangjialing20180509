@@ -1,0 +1,93 @@
+package com.example.zld.day02text.beans;
+
+import java.util.List;
+
+/**
+ * Created by zld on 2018/5/9.
+ */
+
+public class Beans {
+    private int code;
+    private String msg;
+    private List<NewslistBean> newslist;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public List<NewslistBean> getNewslist() {
+        return newslist;
+    }
+
+    public void setNewslist(List<NewslistBean> newslist) {
+        this.newslist = newslist;
+    }
+
+    public static class NewslistBean {
+        /**
+         * ctime : 2016-12-04 13:00
+         * title : 格林：理解科尔吸食大麻 不过我从没吸过
+         * description : NBA新闻
+         * picUrl : http://www.51tyw.com/uploads/allimg/161204/1-161204120131.jpg
+         * url : http://www.51tyw.com/nba/2421.html
+         */
+
+        private String ctime;
+        private String title;
+        private String description;
+        private String picUrl;
+        private String url;
+
+        public String getCtime() {
+            return ctime;
+        }
+
+        public void setCtime(String ctime) {
+            this.ctime = ctime;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getPicUrl() {
+            return picUrl;
+        }
+
+        public void setPicUrl(String picUrl) {
+            this.picUrl = picUrl;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+    }
+}
